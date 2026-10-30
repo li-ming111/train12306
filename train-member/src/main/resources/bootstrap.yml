@@ -1,0 +1,21 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: trainMember
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:8848
+        username: nacos
+        password: nacos
+  jackson:
+    date-format: yyyy-MM-dd
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/train?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+
+
+
